@@ -1,0 +1,2 @@
+gfortran -ffixed-line-length-132 example.f -o test
+

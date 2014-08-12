@@ -1,0 +1,35 @@
+
+ERROR MESSAGES
+--------------
+
+depth-ns	      	ERROR 1 : the NR iteration escaped the interval
+				  		and e-solve.f did not find a solution
+
+gamma-n 	      	ERROR 1 : the data is out of the oceanographic range of
+				  		longitude   - (0.0,360.0)
+						latitude    - (-80.0,66.0)
+						salinity    - (0.0,42.0)
+						temperature - (-2.0,40.0)
+						pressure    - (0.0,10000.0)
+
+gamma-out-of-range  ERROR 1 : the bottle is neither lighter or denser
+						than the Levitus labelled data cast
+
+get-lunit	        ERROR 1 : no unopened logical unit between 20 and 50
+						could be found
+
+index		        ERROR 1 : the given real is out of the given interval
+
+neutral-surfaces    ERROR 1 : there is an input missing gamma value
+		      		ERROR 2 : the nint_max parameter must be increased
+		      		ERROR 3 : no quadratic solution was found
+
+
+
+
+WARNING MESSAGES
+----------------
+
+e-solve	    		WARNING 1 : the iteration limit of 20 was reached
+
+goor-solve		    WARNING 1 : the iteration limit of 20 was reached

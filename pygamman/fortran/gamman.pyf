@@ -1,0 +1,247 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module gamman ! in 
+    interface  ! in :gamman
+        function atg(s,t,p) ! in :gamman:gamman.f
+            real :: s
+            real :: t
+            real :: p
+            real :: atg
+        end function atg
+        subroutine depth_ns(s,t,p,n,s0,t0,p0,sns,tns,pns) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: s
+            real dimension(n),depend(n) :: t
+            real dimension(n),depend(n) :: p
+            real :: s0
+            real :: t0
+            real :: p0
+            real :: sns
+            real :: tns
+            real :: pns
+        end subroutine depth_ns
+        subroutine derthe(s,t,p0,dthedt,dtheds,dthedp) ! in :gamman:gamman.f
+            real :: s
+            real :: t
+            real :: p0
+            real :: dthedt
+            real :: dtheds
+            real :: dthedp
+        end subroutine derthe
+        subroutine depth_scv(s,t,p,n,s0,t0,p0,sscv,tscv,pscv,nscv) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: s
+            real dimension(n),depend(n) :: t
+            real dimension(n),depend(n) :: p
+            real :: s0
+            real :: t0
+            real :: p0
+            real dimension(50) :: sscv
+            real dimension(50) :: tscv
+            real dimension(50) :: pscv
+            real :: nscv
+        end subroutine depth_scv
+        function eos8d(s,t,p0,drv) ! in :gamman:gamman.f
+            real :: s
+            real :: t
+            real :: p0
+            real dimension(3,8) :: drv
+            real :: eos8d
+        end function eos8d
+        subroutine eosall(s,t,p0,thet,sigthe,alfnew,betnew,gamnew,soundv) ! in :gamman:gamman.f
+            real :: s
+            real :: t
+            real :: p0
+            real :: thet
+            real :: sigthe
+            real :: alfnew
+            real :: betnew
+            real :: gamnew
+            real :: soundv
+        end subroutine eosall
+        subroutine e_solve(s,t,p,e,n,k,s0,t0,p0,sns,tns,pns,iter) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: s
+            real dimension(n),depend(n) :: t
+            real dimension(n),depend(n) :: p
+            real dimension(n),depend(n) :: e
+            real :: k
+            real :: s0
+            real :: t0
+            real :: p0
+            real :: sns
+            real :: tns
+            real :: pns
+            real :: iter
+        end subroutine e_solve
+        subroutine gamma_n(s,t,p,n,along,alat,gamma,dg_lo,dg_hi) ! in :gamman:gamman.f
+            integer intent(in) :: n
+            real dimension(n),intent(in),depend(n) :: s
+            real dimension(n),intent(in),depend(n) :: t
+            real dimension(n),intent(in),depend(n) :: p
+            real intent(in) :: along
+            real intent(in) :: alat
+            real dimension(n),intent(out) :: gamma
+            real dimension(n),intent(out) :: dg_lo
+            real dimension(n),intent(out) :: dg_hi
+        end subroutine gamma_n
+        subroutine gamma_errors(s,t,p,gamma,a,n,along,alat,s0,t0,p0,sns,tns,pns,kns,gamma_ns,pth_error,scv_l_error,scv_h_error) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: s
+            real dimension(n),depend(n) :: t
+            real dimension(n),depend(n) :: p
+            real dimension(n),depend(n) :: gamma
+            real dimension(n),depend(n) :: a
+            real :: along
+            real :: alat
+            real :: s0
+            real :: t0
+            real :: p0
+            real :: sns
+            real :: tns
+            real :: pns
+            real :: kns
+            real :: gamma_ns
+            real :: pth_error
+            real :: scv_l_error
+            real :: scv_h_error
+        end subroutine gamma_errors
+        subroutine get_lunit(lun) ! in :gamman:gamman.f
+            integer :: lun
+        end subroutine get_lunit
+        subroutine goor(s,t,p,gamma,n,sb,tb,pb,gammab,g1_err,g2_l_err,g2_h_err) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: s
+            real dimension(n),depend(n) :: t
+            real dimension(n),depend(n) :: p
+            real dimension(n),depend(n) :: gamma
+            real :: sb
+            real :: tb
+            real :: pb
+            real :: gammab
+            real :: g1_err
+            real :: g2_l_err
+            real :: g2_h_err
+        end subroutine goor
+        subroutine goor_solve(sl,tl,el,su,tu,eu,p,s0,t0,p0,sigb,sns,tns) ! in :gamman:gamman.f
+            real :: sl
+            real :: tl
+            real :: el
+            real :: su
+            real :: tu
+            real :: eu
+            real :: p
+            real :: s0
+            real :: t0
+            real :: p0
+            real :: sigb
+            real :: sns
+            real :: tns
+        end subroutine goor_solve
+        subroutine gamma_qdr(pl,gl,a,pu,gu,p,gamma) ! in :gamman:gamman.f
+            real :: pl
+            real :: gl
+            real :: a
+            real :: pu
+            real :: gu
+            real :: p
+            real :: gamma
+        end subroutine gamma_qdr
+        subroutine indx(x,n,z,k) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: x
+            real :: z
+            real :: k
+        end subroutine indx
+        subroutine neutral_surfaces(s,t,p,gamma,n,glevels,ng,sns,tns,pns,dsns,dtns,dpns) ! in :gamman:gamman.f
+            integer intent(in) :: n
+            integer intent(in) :: ng
+            real dimension(n),intent(in),depend(n) :: s
+            real dimension(n),intent(in),depend(n) :: t
+            real dimension(n),intent(in),depend(n) :: p
+            real dimension(n),intent(in),depend(n) :: gamma
+            real dimension(ng),intent(in),depend(ng) :: glevels
+            real dimension(ng),intent(out),depend(ng) :: sns
+            real dimension(ng),intent(out),depend(ng) :: tns
+            real dimension(ng),intent(out),depend(ng) :: pns
+            real dimension(ng),intent(out),depend(ng) :: dsns
+            real dimension(ng),intent(out),depend(ng) :: dtns
+            real dimension(ng),intent(out),depend(ng) :: dpns
+        end subroutine neutral_surfaces
+        subroutine ocean_test(x1,y1,io1,x2,y2,io2,z,itest) ! in :gamman:gamman.f
+            real :: x1
+            real :: y1
+            integer*4 :: io1
+            real :: x2
+            real :: y2
+            integer*4 :: io2
+            real :: z
+            real :: itest
+        end subroutine ocean_test
+        subroutine read_nc(along,alat,s0,t0,p0,gamma0,a0,n0,along0,alat0,iocean0) ! in :gamman:gamman.f
+            real :: along
+            real :: alat
+            real dimension(33,2,2) :: s0
+            real dimension(33,2,2) :: t0
+            real dimension(33) :: p0
+            real dimension(33,2,2) :: gamma0
+            real dimension(33,2,2) :: a0
+            integer*4 dimension(2,2) :: n0
+            real dimension(2) :: along0
+            real dimension(2) :: alat0
+            integer*4 dimension(2,2) :: iocean0
+        end subroutine read_nc
+        subroutine scv_solve(s,t,p,e,n,k,s0,t0,p0,sscv,tscv,pscv,iter) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: s
+            real dimension(n),depend(n) :: t
+            real dimension(n),depend(n) :: p
+            real dimension(n),depend(n) :: e
+            real :: k
+            real :: s0
+            real :: t0
+            real :: p0
+            real :: sscv
+            real :: tscv
+            real :: pscv
+            real :: iter
+        end subroutine scv_solve
+        subroutine sig_vals(s1,t1,p1,s2,t2,p2,sig1,sig2) ! in :gamman:gamman.f
+            real :: s1
+            real :: t1
+            real :: p1
+            real :: s2
+            real :: t2
+            real :: p2
+            real :: sig1
+            real :: sig2
+        end subroutine sig_vals
+        subroutine stp_interp(s,t,p,n,s0,t0,p0) ! in :gamman:gamman.f
+            integer :: n
+            real dimension(n) :: s
+            real dimension(n),depend(n) :: t
+            real dimension(n),depend(n) :: p
+            real :: s0
+            real :: t0
+            real :: p0
+        end subroutine stp_interp
+        function svan(s,t,p0,sigma) ! in :gamman:gamman.f
+            real :: s
+            real :: t
+            real :: p0
+            real :: sigma
+            real :: svan
+        end function svan
+        function theta(s,t0,p0,pr) ! in :gamman:gamman.f
+            real :: s
+            real :: t0
+            real :: p0
+            real :: pr
+            real :: theta
+        end function theta
+    end interface 
+end python module gamman
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/

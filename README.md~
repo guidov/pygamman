@@ -1,7 +1,5 @@
-pygamman: Python interface to PreTEOS-10 neutral density fortran code
+pygamman: Python interface to PreTEOS-10 neutral density fortran code (by Jackett and McDougal)
 ================================================================================================
-
-Jackett, David R., Trevor J. McDougall, 1997: A Neutral Density Variable for the World's Oceans. J. Phys. Oceanogr., 27, 237–263. doi: 10.1175/1520-0485(1997)0272.0.CO;2
 
 - Author: 
 - License: BSD 3-clause
