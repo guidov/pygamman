@@ -59,7 +59,7 @@ Known Problems and TODO:
 2) Getting error which kills the python interpreter (also in the ipython notebook)
  ERROR 1 in gamma-n.f : out of oceanographic range
 
- Solution: return a set of missing values (-99.1)
+ Solution: Routine will not work for latitudes < 80S and > 64N
 
 
 

@@ -945,8 +945,7 @@ ccc
       end if
 
       if(along.lt.0.0.or.along.gt.360.0.or.
-     &     alat.lt.-90.0.or.alat.gt.90.0) then
-ccc     &     alat.lt.-80.0.or.alat.gt.64.0) then
+     &     alat.lt.-80.0.or.alat.gt.64.0) then
          print *, 'ERROR 1 in gamma-n.f : out of oceanographic range'
          print *
          stop
