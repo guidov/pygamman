@@ -48,18 +48,3 @@ Trying it out
 -------------
 See examples and notebook directory
 
-
-Known Problems and TODO:
-------------------------
-1) Geting this message on calculation of gamma_n on CTD
- WARNING 1 in goor-solve.f
-
- Solution: ignore warning
-
-2) Getting error which kills the python interpreter (also in the ipython notebook)
- ERROR 1 in gamma-n.f : out of oceanographic range
-
- Solution: return a set of missing values (-99.1)
-
-
-
