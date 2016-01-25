@@ -2370,7 +2370,7 @@ ccc
          if(i0.eq.1.and.j0.eq.1) then
 
             open(lun,
-     &file='/usr/local/lib/python2.7/dist-packages/pygamman/ocndata/llp.fdt',
+     &file='/home/guido/anaconda2/lib/python2.7/site-packages/pygamman/ocndata/llp.fdt',
      &status='old',form='unformatted')
             read(lun) along_s,alat_s,p0_s,n,iocean
             close(lun)
@@ -2404,7 +2404,7 @@ ccc
          alat0(2) = alat0(1)+ndy
          
          open(lun,
-     &file='/usr/local/lib/python2.7/dist-packages/pygamman/ocndata/stga.fdt',
+     &file='/home/guido/anaconda2/lib/python2.7/site-packages/pygamman/ocndata/stga.fdt',
      &status='old',access='direct',recl=528,form='unformatted')
          
          if(i0.lt.nx) then

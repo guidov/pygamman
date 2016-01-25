@@ -1,0 +1,558 @@
+Egg name: pygamman-0.1.egg-info
+running build
+running build_py
+running build_ext
+running build_src
+build_src
+building extension "gamman" sources
+f2py options: []
+  adding 'build/src.linux-x86_64-2.7/fortranobject.c' to sources.
+  adding 'build/src.linux-x86_64-2.7' to include_dirs.
+  adding 'pygamman/fortran/gamman-f2pywrappers.f' to sources.
+building data_files sources
+build_src: building npy-pkg config files
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+customize Gnu95FCompiler
+Found executable /usr/bin/gfortran
+customize Gnu95FCompiler
+customize Gnu95FCompiler using build_ext
+building 'gamman' extension
+compiling C sources
+C compiler: x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -D_FORTIFY_SOURCE=2 -g -fstack-protector-strong -Wformat -Werror=format-security -fPIC
+
+compile options: '-Ibuild/src.linux-x86_64-2.7 -I/usr/local/lib/python2.7/dist-packages/numpy/core/include -I/usr/include/python2.7 -c'
+x86_64-linux-gnu-gcc: build/src.linux-x86_64-2.7/fortranobject.c
+In file included from /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/ndarraytypes.h:1804:0,
+                 from /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/ndarrayobject.h:17,
+                 from /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from build/src.linux-x86_64-2.7/fortranobject.h:13,
+                 from build/src.linux-x86_64-2.7/fortranobject.c:2:
+/usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+ #warning "Using deprecated NumPy API, disable it by " \
+  ^
+x86_64-linux-gnu-gcc: pygamman/fortran/gammanmodule.c
+In file included from /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/ndarraytypes.h:1804:0,
+                 from /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/ndarrayobject.h:17,
+                 from /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from build/src.linux-x86_64-2.7/fortranobject.h:13,
+                 from pygamman/fortran/gammanmodule.c:18:
+/usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+ #warning "Using deprecated NumPy API, disable it by " \
+  ^
+pygamman/fortran/gammanmodule.c:146:12: warning: ‘f2py_size’ defined but not used [-Wunused-function]
+ static int f2py_size(PyArrayObject* var, ...)
+            ^
+compiling Fortran sources
+Fortran f77 compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /usr/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+compile options: '-Ibuild/src.linux-x86_64-2.7 -I/usr/local/lib/python2.7/dist-packages/numpy/core/include -I/usr/include/python2.7 -c'
+extra f77 options: '-ffixed-line-length-132'
+gfortran:f77: pygamman/fortran/gamman.f
+Warning: Nonconforming tab character in column 1 of line 93
+Warning: Nonconforming tab character in column 1 of line 104
+Warning: Nonconforming tab character in column 1 of line 181
+Warning: Nonconforming tab character in column 1 of line 190
+Warning: Nonconforming tab character in column 1 of line 191
+Warning: Nonconforming tab character in column 1 of line 192
+Warning: Nonconforming tab character in column 1 of line 193
+Warning: Nonconforming tab character in column 1 of line 319
+Warning: Nonconforming tab character in column 1 of line 331
+Warning: Nonconforming tab character in column 1 of line 411
+Warning: Nonconforming tab character in column 1 of line 420
+Warning: Nonconforming tab character in column 1 of line 421
+Warning: Nonconforming tab character in column 1 of line 422
+Warning: Nonconforming tab character in column 1 of line 423
+Warning: Nonconforming tab character in column 1 of line 432
+Warning: Nonconforming tab character in column 1 of line 433
+Warning: Nonconforming tab character in column 1 of line 434
+Warning: Nonconforming tab character in column 1 of line 435
+Warning: Nonconforming tab character in column 1 of line 436
+Warning: Nonconforming tab character in column 1 of line 832
+Warning: Nonconforming tab character in column 1 of line 833
+Warning: Nonconforming tab character in column 1 of line 835
+Warning: Nonconforming tab character in column 1 of line 836
+Warning: Nonconforming tab character in column 1 of line 838
+Warning: Nonconforming tab character in column 1 of line 839
+Warning: Nonconforming tab character in column 1 of line 840
+Warning: Nonconforming tab character in column 1 of line 841
+Warning: Nonconforming tab character in column 1 of line 845
+Warning: Nonconforming tab character in column 1 of line 850
+Warning: Nonconforming tab character in column 1 of line 852
+Warning: Nonconforming tab character in column 1 of line 859
+Warning: Nonconforming tab character in column 1 of line 1261
+Warning: Nonconforming tab character in column 1 of line 1263
+Warning: Nonconforming tab character in column 1 of line 1265
+Warning: Nonconforming tab character in column 1 of line 1274
+Warning: Nonconforming tab character in column 1 of line 1276
+Warning: Nonconforming tab character in column 1 of line 1280
+Warning: Nonconforming tab character in column 1 of line 1308
+Warning: Nonconforming tab character in column 1 of line 1376
+Warning: Nonconforming tab character in column 1 of line 1378
+Warning: Nonconforming tab character in column 1 of line 1682
+Warning: Nonconforming tab character in column 1 of line 1683
+Warning: Nonconforming tab character in column 1 of line 1685
+Warning: Nonconforming tab character in column 1 of line 1686
+Warning: Nonconforming tab character in column 1 of line 1688
+Warning: Nonconforming tab character in column 1 of line 1689
+Warning: Nonconforming tab character in column 1 of line 1690
+Warning: Nonconforming tab character in column 1 of line 1694
+Warning: Nonconforming tab character in column 1 of line 1698
+Warning: Nonconforming tab character in column 1 of line 1700
+Warning: Nonconforming tab character in column 1 of line 1705
+Warning: Nonconforming tab character in column 1 of line 1798
+Warning: Nonconforming tab character in column 1 of line 1799
+Warning: Nonconforming tab character in column 1 of line 1801
+Warning: Nonconforming tab character in column 1 of line 1803
+Warning: Nonconforming tab character in column 1 of line 1813
+Warning: Nonconforming tab character in column 1 of line 1815
+Warning: Nonconforming tab character in column 1 of line 1817
+Warning: Nonconforming tab character in column 1 of line 1818
+Warning: Nonconforming tab character in column 1 of line 2194
+Warning: Nonconforming tab character in column 1 of line 2201
+Warning: Nonconforming tab character in column 1 of line 2588
+Warning: Nonconforming tab character in column 1 of line 2589
+Warning: Nonconforming tab character in column 1 of line 2591
+Warning: Nonconforming tab character in column 1 of line 2592
+Warning: Nonconforming tab character in column 1 of line 2594
+Warning: Nonconforming tab character in column 1 of line 2595
+Warning: Nonconforming tab character in column 1 of line 2596
+Warning: Nonconforming tab character in column 1 of line 2597
+Warning: Nonconforming tab character in column 1 of line 2601
+Warning: Nonconforming tab character in column 1 of line 2606
+Warning: Nonconforming tab character in column 1 of line 2608
+Warning: Nonconforming tab character in column 1 of line 2615
+pygamman/fortran/gamman.f:226.50:
+
+      PARAMETER (A0=-0.36504D-4,A1=-0.83198D-5,A2=+0.54065D-7)                                                                      
+                                                  1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:227.50:
+
+      PARAMETER (A3=-0.40274D-9,B0=-0.17439D-5,B1=+0.29778D-7)                                                                      
+                                                  1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:228.51:
+
+      PARAMETER (D0=+0.41057D-10,C0=-0.89309D-8,C1=+0.31628D-9)                                                                     
+                                                   1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:229.52:
+
+      PARAMETER (C2=-0.21987D-11,E0=+0.16056D-12,E1=-0.50484D-14)                                                                   
+                                                    1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:15.12:
+
+      atg = (((-2.1687d-16*t+1.8676d-14)*t-4.6206d-13)*p                                                                            
+            1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2767.39:
+
+      data r3500,r4/1028.1063,4.8314d-4/                                                                                            
+                                       1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2777.11:
+
+      r1 = ((((6.536332d-9*t-1.120083d-6)*t+1.001685d-4)*t                                                                          
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2782.11:
+
+      r2 = (((5.3875d-9*t-8.2467d-7)*t+7.6438d-5)*t-4.0899d-3)*t                                                                    
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2785.11:
+
+      r3 = (-1.6546d-6*t+1.0227d-4)*t-5.72466d-3                                                                                    
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2793.11:
+
+      svan=sva*1.0d+8                                                                                                               
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2802.10:
+
+      e = (9.1697d-10*t+2.0816d-8)*t-9.9348d-7                                                                                      
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2803.11:
+
+      bw = (5.2787d-8*t-6.12293d-6)*t+3.47718d-5                                                                                    
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2806.10:
+
+      d = 1.91075d-4                                                                                                                
+          1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2807.10:
+
+      c = (-1.6078d-6*t-1.0981d-5)*t+2.2838d-3                                                                                      
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2808.11:
+
+      aw = ((-5.77905d-7*t+1.16092d-4)*t+1.43713d-3)*t                                                                              
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2812.11:
+
+      b1 = (-5.3009d-4*t+1.6483d-2)*t+7.944d-2                                                                                      
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2813.11:
+
+      a1 = ((-6.1670d-5*t+1.09987d-2)*t-0.603459)*t+54.6746                                                                         
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2814.11:
+
+      kw = (((-5.155288d-5*t+1.360477d-2)*t-2.327105)*t                                                                             
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2824.13:
+
+      k35  = (5.03217d-5*p+3.359406)*p+21582.27                                                                                     
+             1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2829.11:
+
+      svan=sva*1.0d+8                                                                                                               
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:507.39:
+
+      DATA R3500,R4/1028.1063,4.8314D-4/                                                                                            
+                                       1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:519.11:
+
+      R1 = ((((6.536332d-9*T-1.120083d-6)*T+1.001685d-4)*T                                                                          
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:524.11:
+
+      R2 = (((5.3875d-9*T-8.2467d-7)*T+7.6438d-5)*T-4.0899d-3)*T                                                                    
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:527.11:
+
+      R3 = (-1.6546d-6*T+1.0227d-4)*T-5.72466d-3                                                                                    
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:538.10:
+
+      R4S=9.6628d-4                                                                                                                 
+          1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:542.10:
+
+      R1 =(((3.268166d-8*T-4.480332d-6)*T+3.005055d-4)*T                                                                            
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:544.11:
+
+      R2 = ((2.155d-8*T-2.47401d-6)*T+1.52876d-4)*T-4.0899d-3                                                                       
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:545.11:
+
+      R3 = -3.3092d-6*T+1.0227d-4                                                                                                   
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:559.11:
+
+      R1 = ((1.3072664d-7*T-1.3440996d-5)*T+6.01011d-4)*T-1.819058d-2                                                               
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:560.11:
+
+      R2 = (6.465d-8*T-4.94802d-6)*T+1.52876d-4                                                                                     
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:561.11:
+
+      R3 = -3.3092d-6                                                                                                               
+           1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:577.10:
+
+      E = (9.1697d-10*T+2.0816d-8)*T-9.9348d-7                                                                                      
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:578.11:
+
+      BW = (5.2787d-8*T-6.12293d-6)*T+3.47718d-5                                                                                    
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:585.17:
+
+      DRV(1,6) = B + 5.03217d-5                                                                                                     
+                 1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:587.11:
+
+      BW = 1.05574d-7*T-6.12293d-6                                                                                                  
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:588.10:
+
+      E = 1.83394d-9*T +2.0816d-8                                                                                                   
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:593.10:
+
+      E = 1.83394d-9                                                                                                                
+          1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:594.11:
+
+      BW = 1.05574d-7                                                                                                               
+           1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:597.10:
+
+      D = 1.91075d-4                                                                                                                
+          1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:598.10:
+
+      C = (-1.6078d-6*T-1.0981d-5)*T+2.2838d-3                                                                                      
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:599.11:
+
+      AW = ((-5.77905d-7*T+1.16092d-4)*T+1.43713d-3)*T                                                                              
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:606.11:
+
+      DADS=2.866125d-4*SR+C                                                                                                         
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:609.10:
+
+      C = -3.2156d-6*T -1.0981d-5                                                                                                   
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:610.11:
+
+      AW = (-1.733715d-6*T+2.32184d-4)*T+1.43713d-3                                                                                 
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:615.10:
+
+      C = -3.2156d-6                                                                                                                
+          1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:616.11:
+
+      AW = -3.46743d-6*T + 2.32184d-4                                                                                               
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:621.11:
+
+      B1 = (-5.3009d-4*T+1.6483d-2)*T+7.944d-2                                                                                      
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:622.11:
+
+      A1 = ((-6.1670d-5*T+1.09987d-2)*T-0.603459)*T+54.6746                                                                         
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:623.11:
+
+      KW = (((-5.155288d-5*T+1.360477d-2)*T-2.327105)*T                                                                             
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:635.11:
+
+      B1 = -1.06018d-3*T+1.6483d-2                                                                                                  
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:637.11:
+
+      A1 = (-1.8501d-4*T+2.19974d-2)*T-0.603459                                                                                     
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:638.11:
+
+      KW = ((-2.0621152d-4*T+4.081431d-2)*T-4.65421)*T+148.4206                                                                     
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:642.11:
+
+      B1 = -1.06018d-3                                                                                                              
+           1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:643.11:
+
+      A1 = -3.7002d-4*T + 2.19974d-2                                                                                                
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:644.11:
+
+      KW = (-6.1863456d-4*T+8.162862d-2)*T-4.65421                                                                                  
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:656.13:
+
+      K35  = (5.03217d-5*P+3.359406)*P+21582.27                                                                                     
+             1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:682.10:
+
+      V = 1.0/(SIGMA+1000.0D0)                                                                                                      
+          1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:1008.11:
+
+      dx = abs(mod(along,dble(ndx)))                                                                                                
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:1009.11:
+
+      dy = abs(mod(alat+80.0,dble(ndy)))                                                                                            
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:1010.11:
+
+      rx = dx/dble(ndx)                                                                                                             
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:1011.11:
+
+      ry = dy/dble(ndy)                                                                                                             
+           1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2015.22:
+
+               bden = rhomid*(beta_mid*dels-alfa_mid*delth)                                                                         
+                      1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2017.45:
+
+               if(abs(bden).le.1.d-6) bden = 1.d-6                                                                                  
+                                             1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2045.25:
+
+                  pns1 = q/a                                                                                                        
+                         1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:2046.25:
+
+                  pns2 = c/q                                                                                                        
+                         1
+Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1)
+pygamman/fortran/gamman.f:1616.50:
+
+      subroutine goor_solve(sl,tl,el,su,tu,eu,p,s0,t0,p0,sigb,sns,tns)                                                              
+                                                  1
+Warning: Unused dummy argument 's0' at (1)
+pygamman/fortran/gamman.f:1616.53:
+
+      subroutine goor_solve(sl,tl,el,su,tu,eu,p,s0,t0,p0,sigb,sns,tns)                                                              
+                                                     1
+Warning: Unused dummy argument 't0' at (1)
+pygamman/fortran/gamman.f:1161.51:
+
+      subroutine gamma_errors(s,t,p,gamma,a,n,along,alat,                                                                           
+                                                   1
+Warning: Unused dummy argument 'along' at (1)
+pygamman/fortran/gamman.f: In function ‘depth_ns’:
+pygamman/fortran/gamman.f:136:0: warning: ‘pc_0’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+                      ecz0 = -(ec0-ec_0)/(pc0-pc_0)
+ ^
+pygamman/fortran/gamman.f:136:0: warning: ‘ec_0’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+extra f77 options: '-ffixed-line-length-132'
+gfortran:f77: pygamman/fortran/gamman-f2pywrappers.f
+/usr/bin/gfortran -Wall -g -Wall -g -shared build/temp.linux-x86_64-2.7/pygamman/fortran/gammanmodule.o build/temp.linux-x86_64-2.7/build/src.linux-x86_64-2.7/fortranobject.o build/temp.linux-x86_64-2.7/pygamman/fortran/gamman.o build/temp.linux-x86_64-2.7/pygamman/fortran/gamman-f2pywrappers.o -lgfortran -o gamman.so
+running Makefile (in fortran/data)
+make clean
+rm -f *.o *.mod genunformatted llp.fdt stga.fdt
+make genunformatted
+gfortran   -c -o ra_files.o ra_files.f
+gfortran  -o genunformatted ra_files.o
+run genunformatted
+   converting data ...
+           1          90
+           2         180
+           3         270
+           4         360
+           5         450
+           6         540
+           7         630
+           8         720
+           9         810
+          10         900
+          11         990
+
+  148  -44   30
+  1  34.98600  13.83000     0.00000  26.25507  -0.54464E-04
+  2  34.98435  13.72345    10.00000  26.27724  -0.82643E-04
+  3  34.98800  13.58270    20.00000  26.31098  -0.27687E-04
+  4  34.98630  13.39225    30.00000  26.35101  -0.73089E-03
+  5  34.98325  13.05475    50.00000  26.42119  -0.10615E-02
+  6  35.00625  12.46100    75.00000  26.56495  -0.56662E-03
+  7  35.04450  11.90100   100.00000  26.71248  -0.52036E-03
+  8  35.04763  11.46188   125.00000  26.80509  -0.39431E-03
+  9  35.02375  11.15275   150.00000  26.84793  -0.10173E-02
+ 10  34.95500  10.68800   200.00000  26.88349  -0.71692E-03
+ 11  34.90700  10.38300   250.00000  26.90340  -0.16252E-02
+ 12  34.84800   9.91200   300.00000  26.94294  -0.20524E-02
+ 13  34.72400   9.18700   400.00000  26.97375  -0.40207E-02
+ 14  34.61700   8.37100   500.00000  27.02709  -0.11263E-02
+ 15  34.55200   7.92900   600.00000  27.04815   0.52412E-03
+ 16  34.51700   7.43000   700.00000  27.09792  -0.31348E-03
+ 17  34.49000   6.63500   800.00000  27.19799  -0.25345E-02
+ 18  34.45700   5.93900   900.00000  27.27557  -0.43865E-02
+ 19  34.43200   4.95500  1000.00000  27.39297  -0.71823E-03
+ 20  34.43300   4.48400  1100.00000  27.45670   0.58549E-03
+ 21  34.44900   3.96700  1200.00000  27.53748   0.13837E-02
+ 22  34.46600   3.65600  1300.00000  27.59397   0.96377E-05
+ 23  34.49600   3.32800  1400.00000  27.66483  -0.41392E-02
+ 24  34.52800   3.00700  1500.00000  27.73222  -0.22049E-02
+ 25  34.61300   2.62700  1750.00000  27.84082   0.40691E-02
+ 26  34.67400   2.35700  2000.00000  27.92161   0.83919E-03
+ 27  34.72500   2.01200  2500.00000  28.01248   0.12360E-02
+ 28  34.73200   1.71600  3000.00000  28.06601   0.42457E-02
+ 29  34.72400   1.34200  3500.00000  28.12535   0.30446E-02
+ 30  34.71700   1.04100  4000.00000  28.18101  -0.99000E+02
+          12        1080
+          13        1170
+          14        1260
+          15        1350
+          16        1440
+          17        1530
+          18        1620
+          19        1710
+          20        1800
+          21        1890
+          22        1980
+          23        2070
+          24        2160
+          25        2250
+          26        2340
+          27        2430
+          28        2520
+          29        2610
+          30        2700
+          31        2790
+          32        2880
+          33        2970
+          34        3060
+          35        3150
+          36        3240
+          37        3330
+          38        3420
+          39        3510
+          40        3600
+          41        3690
+          42        3780
+          43        3870
+          44        3960
+          45        4050

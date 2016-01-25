@@ -1,0 +1,24 @@
+package:
+    name: pygamman
+    version: "0.1"
+
+source:
+    git_url: https://github.com/guidov/pygamman.git
+
+requirements:
+    build:
+        - python
+        - numpy ==1.8.2
+        - setuptools
+
+    run:
+        - python
+        - numpy
+
+about:
+    home: https://github.com/guidov/pygamman
+    summary: pygamman is a python wrapper for preTEOS-10 gamma funtion
+
+build:
+  script_env:
+    - CONDA_PY
