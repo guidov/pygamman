@@ -1,3 +1,6 @@
+The python package install does not seem to work.
+For the simple f2py wrapper see: https://github.com/guidov/pygamman_f2py
+
 pygamman: Python interface to PreTEOS-10 neutral density fortran code
 ================================================================================================
 
